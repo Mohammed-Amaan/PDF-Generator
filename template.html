@@ -5,58 +5,36 @@
 	<head>
 	<style type="text/css">
 		body{
-			width: 1200px;
+			width: 400px;
 			margin: 0;
 			padding: 0px;
-			font-size: 16px;
+			font-size: 20px;
 			line-height: 24px;
 			font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
-			color: rgb(33,33,33);
+			color:whitesmoke;
+			background: rgb(15,41,3);
+			background: linear-gradient(90deg, rgba(15,41,3,1) 0%, rgba(5,45,2,1) 0%, rgba(0,0,0,1) 100%);
 		}
-		.report-header{
-			background: rgb(55,39,114);
-			color: rgb(255,255,255);
-			padding: 15px;
-			padding-left: 200px;
-			box-sizing: border-box;
-			display: block;
-			position: relative;
-		}
-		.report-header .logo{
-			position: absolute;
-			top: 40px;
-			left: 15px;
-			width: 150px;
-		}
-		.report-footer{
-			background: rgb(55,39,114);
-			color: rgb(255,255,255);
-			padding: 15px;
-			box-sizing: border-box;
-			display: block;
-			position: relative;
+		h2{
+			text-align: center;
+			color: rgb(255, 255, 255);
 		}
 		.report-body{
 			width: 70%;
 			display: inline-block;
 			position: relative;
-			padding: 15px;
+			padding: 5px;
 			box-sizing: border-box;
 			vertical-align: top;
 		}
-		.report-photo{
-			width: 28%;
-			display: inline-block;
-			position: relative;
-			vertical-align: top;
-			box-sizing: border-box;
-			margin-top: 15px;
-		}
-		.report-photo img{
-			width: 100%;
+		img{
+			width: 20%;
+			height: 20%;
+			padding: 10px;
+			margin: 5px;
 		}
 		.report-body .info p{
-			border: rgb(204,204,204) solid 1px;
+			border: rgb(38, 255, 0) solid 1px;
 			padding: 5px;
 			display: block;
 			position: relative;
@@ -65,28 +43,15 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	<div class="report-header">
-		<img src="https://www.activfirst.co.uk/wp-content/uploads/logo-example.jpg" class="logo">
-		<h3>{{title}}</h3>
-		<p>{{date}}</p>
-	</div>
+		<h2>{{title}}</h2>
+		<img src="https://media.licdn.com/dms/image/D4D0BAQHSZlAHPAsQzQ/company-logo_200_200/0/1691481417385/klipit_logo?e=2147483647&v=beta&t=7ieDYPq0ZqaPbxqSqDnYYoFxi7vIp916kybVz2zVKX4" alt="">
 	<div class="report-body">
 		<div class="info">
-			<p>Student: {{name}}</p>
-			<p>OEN: {{oen}}</p>
-			<p>Age: {{age}}</p>
-			<p>Birthdate: {{birthdate}}</p>
-			<p>Course: {{course}}</p>
+			<p>Product: {{product}}</p>
+			<p>Date: {{date}}</p>
+			<p>Name: {{name}}</p>
+			<p>TruklipId: {{truklipid}}</p>
 		</div>
-		<div class="obs">
-			<p>Obs: {{obs}}</p>
-		</div>
-	</div>
-	<div class="report-photo">
-		<img src="https://avatars1.githubusercontent.com/u/16254838?s=460&v=4">
-	</div>
-	<div class="report-footer">
-		A generic Company - All Rights reserved.
 	</div>
 </body>
 </html>
